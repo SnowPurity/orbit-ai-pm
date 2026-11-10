@@ -1,0 +1,35 @@
+{
+  "exportedAt": "2026-11-10T08:20:08.163Z",
+  "database": "orbit-data-2026-11-10.db",
+  "note": "actor_tokens removed from the exported snapshot; API keys are not stored in the database.",
+  "counts": {
+    "actor_tokens": 0,
+    "actors": 6,
+    "agent_jobs": 35,
+    "automation_runs": 30,
+    "automations": 7,
+    "comments": 63,
+    "events": 357,
+    "notifications": 7,
+    "project_members": 11,
+    "projects": 3,
+    "sqlite_sequence": 1,
+    "task_assignees": 55,
+    "task_dependencies": 0,
+    "task_files": 1,
+    "task_groups": 12,
+    "tasks": 158
+  },
+  "attachments": [
+    {
+      "id": "file_f9b3705cfeb92065",
+      "name": "电竞鼠标产品需求文档_PRD.md",
+      "mime": "text/markdown",
+      "sizeBytes": 15987,
+      "taskId": "tsk_0c1bb9794c21d22b",
+      "exportPath": "exports/files/objects/65/file_f9b3705cfeb92065",
+      "sha256Matches": true
+    }
+  ],
+  "databaseSha256": "c6219dfa19f3381f97ce0d9a01116ffd34c3ecde7c8c30add89dbde6347f6815"
+}
