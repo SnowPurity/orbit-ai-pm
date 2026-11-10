@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+.env
+.orbitrc.json
+*.log
+.DS_Store
+reports/

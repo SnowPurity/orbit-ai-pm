@@ -1,0 +1,42 @@
+{
+  "name": "orbit-ai-pm",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI-native project management demo with REST, MCP, CLI, cron and event hooks",
+  "bin": {
+    "orbit": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node --experimental-sqlite dist/server.js",
+    "build": "npm run build:vendor && tsc -p tsconfig.json",
+    "build:vendor": "node scripts/build-vendor.mjs",
+    "setup": "tsx scripts/setup.ts",
+    "db:reset": "tsx scripts/setup.ts --reset",
+    "orbit": "tsx src/cli.ts",
+    "mcp": "tsx src/mcp.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "pretest": "npm run build:vendor",
+    "test:report": "tsx scripts/test-report.ts",
+    "smoke:mcp": "tsx scripts/mcp-smoke.ts"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^9.4.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "commander": "^14.0.2",
+    "croner": "^11.0.0",
+    "fastify": "^5.12.7",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "esbuild": "^0.28.2",
+    "markdown-it": "^14.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
